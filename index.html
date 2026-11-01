@@ -1,0 +1,1649 @@
+<!DOCTYPE html>
+<html lang="th" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MINI MART - สะดวก ครบครัน ทุกวันใกล้บ้านคุณ | เปิด 24 ชั่วโมง</title>
+  <meta name="description" content="MINI MART ร้านสะดวกซื้อยุคใหม่ สะดวก สดใหม่ ครบครัน พร้อม 3 สาขาทั่วกรุงเทพฯ โปรโมชันสุดคุ้ม และบริการสั่งซื้อออนไลน์ตลอด 24 ชั่วโมง">
+  
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220%22%20viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🛒</text></svg>">
+  
+  <!-- Google Fonts: Prompt & Kanit -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;500;600;700;800&family=Prompt:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Prompt', 'sans-serif'],
+            heading: ['Kanit', 'sans-serif']
+          },
+          colors: {
+            brand: {
+              50: '#f0fdf4',
+              100: '#dcfce7',
+              500: '#10b981',
+              600: '#059669',
+              700: '#047857',
+              800: '#065f46',
+              900: '#064e3b',
+            },
+            accent: {
+              400: '#fb923c',
+              500: '#f97316',
+              600: '#ea580c',
+              700: '#c2410c',
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    body {
+      font-family: 'Prompt', sans-serif;
+    }
+    h1, h2, h3, h4, h5, h6, .font-heading {
+      font-family: 'Kanit', sans-serif;
+    }
+    .glass-nav {
+      background: rgba(255, 255, 255, 0.92);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+    }
+    .badge-pulse {
+      animation: pulse-glow 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+    }
+    @keyframes pulse-glow {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: .75; transform: scale(1.05); }
+    }
+    .coupon-dashed {
+      border: 2px dashed #f97316;
+    }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased selection:bg-brand-500 selection:text-white min-h-screen flex flex-col">
+
+  <!-- TOP ANNOUNCEMENT BAR -->
+  <aside aria-label="แถบประกาศโปรโมชั่น" class="bg-gradient-to-r from-brand-700 via-brand-600 to-emerald-600 text-white text-xs sm:text-sm py-2 px-4 shadow-sm relative z-50">
+    <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-2">
+      <div class="flex items-center gap-2 overflow-hidden text-ellipsis whitespace-nowrap">
+        <span class="bg-accent-500 text-white font-bold px-2 py-0.5 rounded-full text-xs uppercase animate-pulse">PROMO</span>
+        <span>🎉 ฉลองเปิดสาขาใหม่! ใส่โค้ด <strong class="underline decoration-wavy decoration-yellow-300 font-bold">MINI50</strong> รับส่วนลดทันที 50.- เมื่อช้อปครบ 200.-</span>
+      </div>
+      <div class="hidden md:flex items-center gap-4 text-xs">
+        <span class="flex items-center gap-1.5"><i class="fa-solid fa-truck-fast text-yellow-300"></i> จัดส่งด่วนภายใน 30 นาที</span>
+        <span class="flex items-center gap-1.5"><i class="fa-solid fa-clock text-yellow-300"></i> เปิด 24 ชั่วโมง ทั้ง 3 สาขา</span>
+        <a href="tel:029998888" class="hover:underline flex items-center gap-1"><i class="fa-solid fa-phone"></i> 02-999-8888</a>
+      </div>
+    </div>
+  </aside>
+
+  <!-- NAVIGATION BAR -->
+  <header class="sticky top-0 z-40 glass-nav border-b border-slate-200/80 transition-all duration-300 shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        
+        <!-- Brand Logo -->
+        <a href="#home" class="flex items-center gap-3 group">
+          <div class="w-12 h-12 rounded-2xl bg-gradient-to-tr from-brand-600 to-emerald-400 flex items-center justify-center text-white shadow-lg shadow-brand-500/30 group-hover:scale-105 transition-transform duration-300">
+            <i class="fa-solid fa-basket-shopping text-2xl"></i>
+          </div>
+          <div>
+            <div class="flex items-center gap-1.5">
+              <span class="font-heading font-extrabold text-2xl tracking-tight text-slate-900 group-hover:text-brand-600 transition-colors">MINI</span>
+              <span class="font-heading font-extrabold text-2xl tracking-tight text-accent-500">MART</span>
+            </div>
+            <span class="text-[11px] block font-medium text-slate-500 -mt-1 tracking-wider uppercase">Convenience Store 24/7</span>
+          </div>
+        </a>
+
+        <!-- Desktop Menu Links -->
+        <nav class="hidden lg:flex items-center gap-8 font-medium text-slate-600 text-sm">
+          <a href="#home" class="hover:text-brand-600 transition-colors py-1 flex items-center gap-1.5"><i class="fa-solid fa-house text-xs"></i> หน้าแรก</a>
+          <a href="#promotions" class="hover:text-brand-600 transition-colors py-1 flex items-center gap-1.5">
+            <i class="fa-solid fa-fire text-accent-500 text-xs"></i> โปรโมชันพิเศษ
+            <span class="bg-red-500 text-white text-[10px] px-1.5 py-0.5 rounded-full font-bold">HOT</span>
+          </a>
+          <a href="#products" class="hover:text-brand-600 transition-colors py-1 flex items-center gap-1.5"><i class="fa-solid fa-tags text-xs"></i> สินค้าแนะนำ</a>
+          <a href="#branches" class="hover:text-brand-600 transition-colors py-1 flex items-center gap-1.5"><i class="fa-solid fa-location-dot text-xs text-brand-600"></i> สาขา & เวลาเปิด-ปิด</a>
+          <a href="#contact" class="hover:text-brand-600 transition-colors py-1 flex items-center gap-1.5"><i class="fa-solid fa-headset text-xs"></i> ช่องทางติดต่อ</a>
+        </nav>
+
+        <!-- Right Action Items -->
+        <div class="flex items-center gap-3">
+          
+          <!-- Branch Open Status Pill -->
+          <div class="hidden sm:inline-flex items-center gap-2 bg-emerald-50 border border-emerald-200 text-emerald-800 text-xs font-semibold px-3 py-1.5 rounded-full shadow-sm">
+            <span class="w-2.5 h-2.5 rounded-full bg-emerald-500 badge-pulse"></span>
+            <span>เปิดบริการ 24 ชม.</span>
+          </div>
+
+          <!-- Shopping Cart Trigger Button -->
+          <button id="openCartBtn" class="relative p-2.5 text-slate-700 hover:text-brand-600 bg-white hover:bg-brand-50 border border-slate-200 rounded-xl transition-all duration-200 shadow-sm">
+            <i class="fa-solid fa-cart-shopping text-lg"></i>
+            <span id="cartCountBadge" class="absolute -top-1.5 -right-1.5 bg-accent-500 text-white font-bold text-xs w-5 h-5 rounded-full flex items-center justify-center shadow-md scale-0 transition-transform duration-200">0</span>
+          </button>
+
+          <!-- Mobile Hamburger Toggle -->
+          <button id="mobileMenuBtn" class="lg:hidden p-2.5 text-slate-700 hover:text-brand-600 bg-white border border-slate-200 rounded-xl">
+            <i class="fa-solid fa-bars text-xl" id="menuIcon"></i>
+          </button>
+        </div>
+
+      </div>
+
+      <!-- Mobile Dropdown Nav Menu -->
+      <div id="mobileMenu" class="hidden lg:hidden border-t border-slate-200 py-4 px-2 space-y-2 bg-white/95 rounded-b-2xl shadow-xl transition-all">
+        <a href="#home" class="mobile-link block px-3 py-2 rounded-lg text-slate-700 hover:bg-brand-50 hover:text-brand-600 font-medium"><i class="fa-solid fa-house mr-2 text-brand-500"></i>หน้าแรก</a>
+        <a href="#promotions" class="mobile-link block px-3 py-2 rounded-lg text-slate-700 hover:bg-brand-50 hover:text-brand-600 font-medium"><i class="fa-solid fa-fire mr-2 text-accent-500"></i>โปรโมชันเด็ด <span class="bg-red-500 text-white text-[10px] px-1.5 py-0.5 rounded-full ml-1 font-bold">HOT</span></a>
+        <a href="#products" class="mobile-link block px-3 py-2 rounded-lg text-slate-700 hover:bg-brand-50 hover:text-brand-600 font-medium"><i class="fa-solid fa-tags mr-2 text-brand-500"></i>สินค้าแนะนำ</a>
+        <a href="#branches" class="mobile-link block px-3 py-2 rounded-lg text-slate-700 hover:bg-brand-50 hover:text-brand-600 font-medium"><i class="fa-solid fa-location-dot mr-2 text-brand-500"></i>ที่อยู่ 3 สาขา & เวลาเปิด-ปิด</a>
+        <a href="#contact" class="mobile-link block px-3 py-2 rounded-lg text-slate-700 hover:bg-brand-50 hover:text-brand-600 font-medium"><i class="fa-solid fa-headset mr-2 text-brand-500"></i>ติดต่อเรา</a>
+        <div class="pt-2 border-t border-slate-100 flex items-center justify-between px-3 text-xs text-slate-500">
+          <span>🟢 ทุกสาขาเปิดบริการ</span>
+          <a href="tel:029998888" class="text-brand-600 font-bold"><i class="fa-solid fa-phone mr-1"></i>02-999-8888</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="flex-grow">
+    
+    <!-- HERO SECTION -->
+    <section id="home" class="relative overflow-hidden bg-gradient-to-b from-brand-50/70 via-white to-slate-50 pt-12 pb-20 lg:pt-16 lg:pb-28">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+          
+          <!-- Hero Text -->
+          <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+            <div class="inline-flex items-center gap-2 bg-white/80 border border-brand-200 text-brand-700 px-4 py-1.5 rounded-full text-xs sm:text-sm font-semibold shadow-sm backdrop-blur-sm">
+              <span class="w-2 h-2 rounded-full bg-accent-500"></span>
+              <span>ร้านสะดวกซื้อที่คุณวางใจได้ 24 ชั่วโมง</span>
+              <span class="text-slate-400">|</span>
+              <span class="text-accent-600 font-bold">พร้อมให้บริการ 3 สาขา</span>
+            </div>
+
+            <h1 class="font-heading font-extrabold text-4xl sm:text-5xl lg:text-6xl text-slate-900 leading-[1.15] tracking-tight">
+              ชีวิตง่ายขึ้นทุกวัน ที่ <span class="bg-gradient-to-r from-brand-600 via-emerald-600 to-teal-600 bg-clip-text text-transparent">MINI MART</span>
+            </h1>
+
+            <p class="text-base sm:text-lg text-slate-600 max-w-2xl mx-auto lg:mx-0 font-normal leading-relaxed">
+              สินค้าคุณภาพครบครัน อาหารพร้อมทานสดใหม่ เครื่องดื่ม ขนมขบเคี้ยว และของใช้จำเป็นในชีวิตประจำวัน พร้อมโปรโมชันสุดคุ้ม และบริการสั่งซื้อรับสินค้าที่สาขาได้สะดวกทันใจ
+            </p>
+
+            <!-- Quick Action Buttons -->
+            <div class="flex flex-wrap items-center justify-center lg:justify-start gap-4 pt-2">
+              <a href="#promotions" class="bg-accent-500 hover:bg-accent-600 text-white font-semibold px-7 py-3.5 rounded-2xl shadow-lg shadow-accent-500/25 transition-all transform hover:-translate-y-0.5 flex items-center gap-2 text-sm sm:text-base">
+                <i class="fa-solid fa-gift"></i> ดูโปรโมชันประจำเดือน
+              </a>
+              <a href="#branches" class="bg-white hover:bg-slate-50 text-slate-800 font-semibold px-7 py-3.5 rounded-2xl border border-slate-200 shadow-sm transition-all transform hover:-translate-y-0.5 flex items-center gap-2 text-sm sm:text-base">
+                <i class="fa-solid fa-map-location-dot text-brand-600"></i> ค้นหา 3 สาขาใกล้คุณ
+              </a>
+            </div>
+
+            <!-- Feature Pills -->
+            <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 pt-6 border-t border-slate-200/80">
+              <div class="bg-white/70 p-3 rounded-xl border border-slate-200/70 text-center">
+                <div class="text-brand-600 font-heading font-bold text-lg sm:text-xl">3 สาขา</div>
+                <div class="text-slate-500 text-xs">ครอบคลุมกรุงเทพฯ</div>
+              </div>
+              <div class="bg-white/70 p-3 rounded-xl border border-slate-200/70 text-center">
+                <div class="text-brand-600 font-heading font-bold text-lg sm:text-xl">24 Hours</div>
+                <div class="text-slate-500 text-xs">เปิดบริการตลอดคืน</div>
+              </div>
+              <div class="bg-white/70 p-3 rounded-xl border border-slate-200/70 text-center">
+                <div class="text-accent-500 font-heading font-bold text-lg sm:text-xl">1+1 แถม</div>
+                <div class="text-slate-500 text-xs">โปรโมชันจัดเต็ม</div>
+              </div>
+              <div class="bg-white/70 p-3 rounded-xl border border-slate-200/70 text-center">
+                <div class="text-brand-600 font-heading font-bold text-lg sm:text-xl">100% สด</div>
+                <div class="text-slate-500 text-xs">อาหารอุ่นร้อนทุกมื้อ</div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Hero Image & Interactive Card Banner -->
+          <div class="lg:col-span-5 relative">
+            <div class="relative mx-auto max-w-md lg:max-w-none">
+              <!-- Glow backdrop decoration -->
+              <div class="absolute -top-10 -right-10 w-72 h-72 bg-emerald-300 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-pulse"></div>
+              <div class="absolute -bottom-10 -left-10 w-72 h-72 bg-amber-300 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-pulse"></div>
+
+              <div class="relative bg-white rounded-3xl p-4 sm:p-6 shadow-2xl border border-slate-100">
+                <div class="overflow-hidden rounded-2xl relative mb-5 group">
+                  <img src="https://images.unsplash.com/photo-1578916171728-46686eac8d58?auto=format&fit=crop&w=800&q=80" alt="MINI MART Store Front" class="w-full h-64 sm:h-72 object-cover rounded-2xl group-hover:scale-105 transition-transform duration-500">
+                  <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent flex items-end p-5">
+                    <div class="text-white">
+                      <span class="bg-brand-500 text-white font-bold text-[10px] tracking-wide uppercase px-2 py-0.5 rounded-md mb-1 inline-block">Welcome to</span>
+                      <h3 class="text-xl font-heading font-bold text-white">MINI MART Super Convenience</h3>
+                      <p class="text-xs text-slate-200">สินค้าคัดสรรคุณภาพ ใกล้บ้านคุณ เดินทางสะดวก</p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Live Flash Deal Widget in Hero -->
+                <div class="bg-gradient-to-br from-amber-50 to-orange-50 border border-amber-200 rounded-2xl p-4">
+                  <div class="flex items-center justify-between mb-2">
+                    <span class="text-xs font-bold text-accent-600 uppercase flex items-center gap-1">
+                      <i class="fa-solid fa-bolt text-accent-500"></i> FLASH SALE วันนี้
+                    </span>
+                    <!-- Countdown Timer -->
+                    <div class="flex items-center gap-1 text-xs font-mono font-bold bg-white px-2 py-1 rounded-md text-slate-800 shadow-sm border border-amber-200">
+                      <span id="hours">04</span>:
+                      <span id="minutes">35</span>:
+                      <span id="seconds">22</span>
+                    </div>
+                  </div>
+                  <div class="flex items-center gap-3">
+                    <img src="https://images.unsplash.com/photo-1544787219-7f47ccb76574?auto=format&fit=crop&w=150&q=80" alt="Flash Item" class="w-14 h-14 object-cover rounded-xl shadow">
+                    <div class="flex-grow">
+                      <div class="text-sm font-semibold text-slate-800">เซ็ตกาแฟสดพรีเมียม + ขนมปังโทสต์</div>
+                      <div class="flex items-baseline gap-2">
+                        <span class="text-accent-600 font-heading font-extrabold text-base">฿59</span>
+                        <span class="text-slate-400 line-through text-xs">฿115</span>
+                        <span class="text-red-600 bg-red-100 text-[10px] font-bold px-1.5 py-0.2 rounded">-48%</span>
+                      </div>
+                    </div>
+                    <button onclick="addToCart(1)" class="bg-accent-500 hover:bg-accent-600 text-white text-xs font-bold px-3 py-2 rounded-xl transition shadow">
+                      ใส่ตะกร้า
+                    </button>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- PROMOTIONS SECTION -->
+    <section id="promotions" class="py-16 sm:py-24 bg-white border-y border-slate-200/60">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <!-- Section Header -->
+        <div class="text-center max-w-3xl mx-auto mb-14">
+          <div class="inline-flex items-center gap-2 bg-accent-50 border border-accent-200 text-accent-700 px-3.5 py-1 rounded-full text-xs font-semibold uppercase mb-3">
+            <i class="fa-solid fa-fire text-accent-500"></i> Best Deals & Coupons
+          </div>
+          <h2 class="font-heading font-extrabold text-3xl sm:text-4xl text-slate-900 tracking-tight mb-4">
+            โปรโมชันสุดคุ้ม ประจำสัปดาห์
+          </h2>
+          <p class="text-slate-600 text-base">
+            คุ้มค่าทุกการช้อปที่ MINI MART คัดสรรส่วนลดและโปรโมชันที่ดีที่สุดให้กับคุณทุกวัน
+          </p>
+        </div>
+
+        <!-- 3 Highlight Promo Banners -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+          
+          <!-- Promo Card 1: 1 แถม 1 -->
+          <div class="bg-gradient-to-br from-emerald-500 to-teal-700 rounded-3xl p-6 text-white relative overflow-hidden shadow-xl transform hover:-translate-y-1 transition duration-300">
+            <div class="relative z-10 flex flex-col justify-between h-full">
+              <div>
+                <span class="bg-white/20 text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider backdrop-blur-sm">Buy 1 Get 1</span>
+                <h3 class="font-heading font-extrabold text-2xl mt-3 mb-1">ซื้อ 1 ฟรี 1</h3>
+                <p class="text-emerald-100 text-sm mb-4">หมวดเครื่องดื่มเย็น และชาผลไม้พร้อมดื่มทุกรสชาติ ตลอดทั้งเดือนนี้!</p>
+              </div>
+              <div class="flex items-center justify-between pt-4 border-t border-white/20">
+                <span class="text-xs text-emerald-100"><i class="fa-solid fa-calendar-day mr-1"></i> ถึง 30 พ.ย. 2026</span>
+                <a href="#products" class="bg-white text-emerald-800 hover:bg-emerald-50 text-xs font-bold px-3.5 py-2 rounded-xl transition shadow">เลือกช้อป</a>
+              </div>
+            </div>
+            <div class="absolute -right-6 -bottom-6 opacity-20 text-9xl">
+              <i class="fa-solid fa-tags"></i>
+            </div>
+          </div>
+
+          <!-- Promo Card 2: ลด 50% -->
+          <div class="bg-gradient-to-br from-accent-500 to-red-600 rounded-3xl p-6 text-white relative overflow-hidden shadow-xl transform hover:-translate-y-1 transition duration-300">
+            <div class="relative z-10 flex flex-col justify-between h-full">
+              <div>
+                <span class="bg-white/20 text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider backdrop-blur-sm">Midnight Deal</span>
+                <h3 class="font-heading font-extrabold text-2xl mt-3 mb-1">ลด 50% ทุกเมนูเบเกอรี่</h3>
+                <p class="text-orange-100 text-sm mb-4">อิ่มอร่อยรอบดึก เริ่ม 20:00 - 24:00 น. เฉพาะสินค้าเบเกอรี่และแซนวิชสด</p>
+              </div>
+              <div class="flex items-center justify-between pt-4 border-t border-white/20">
+                <span class="text-xs text-orange-100"><i class="fa-solid fa-moon mr-1"></i> โปรโมชันรอบดึกทุกวัน</span>
+                <a href="#branches" class="bg-white text-accent-700 hover:bg-orange-50 text-xs font-bold px-3.5 py-2 rounded-xl transition shadow">ดูสาขาที่ร่วม</a>
+              </div>
+            </div>
+            <div class="absolute -right-6 -bottom-6 opacity-20 text-9xl">
+              <i class="fa-solid fa-percent"></i>
+            </div>
+          </div>
+
+          <!-- Promo Card 3: Free Delivery -->
+          <div class="bg-gradient-to-br from-indigo-600 to-violet-700 rounded-3xl p-6 text-white relative overflow-hidden shadow-xl transform hover:-translate-y-1 transition duration-300">
+            <div class="relative z-10 flex flex-col justify-between h-full">
+              <div>
+                <span class="bg-white/20 text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider backdrop-blur-sm">Fast Delivery</span>
+                <h3 class="font-heading font-extrabold text-2xl mt-3 mb-1">ส่งฟรีถึงคอนโด/บ้าน</h3>
+                <p class="text-indigo-100 text-sm mb-4">สั่งสินค้าผ่านออนไลน์ครบ 250 บาทขึ้นไป ส่งฟรีในระยะ 5 กิโลเมตรจากทุกสาขา</p>
+              </div>
+              <div class="flex items-center justify-between pt-4 border-t border-white/20">
+                <span class="text-xs text-indigo-100"><i class="fa-solid fa-bolt mr-1"></i> ถึงไวใน 30 นาที</span>
+                <a href="#products" class="bg-white text-indigo-700 hover:bg-indigo-50 text-xs font-bold px-3.5 py-2 rounded-xl transition shadow">สั่งเลยตอนนี้</a>
+              </div>
+            </div>
+            <div class="absolute -right-6 -bottom-6 opacity-20 text-9xl">
+              <i class="fa-solid fa-truck-fast"></i>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Coupon Code Bar with Copy Feature -->
+        <div class="bg-slate-50 border border-slate-200/80 rounded-3xl p-6 sm:p-8">
+          <div class="flex flex-col md:flex-row items-center justify-between gap-4 mb-6">
+            <div>
+              <h3 class="font-heading font-bold text-xl text-slate-900 flex items-center gap-2">
+                <i class="fa-solid fa-ticket text-accent-500"></i> คูปองโค้ดส่วนลดพิเศษสำหรับคุณ
+              </h3>
+              <p class="text-slate-500 text-sm">คลิกที่โค้ดเพื่อคัดลอกและนำไปใช้ในตะกร้าสินค้าได้ทันที</p>
+            </div>
+            <span class="text-xs text-brand-700 bg-brand-50 border border-brand-200 px-3 py-1.5 rounded-full font-medium">
+              ✨ ใช้ได้ทั้ง 3 สาขา และสั่งออนไลน์
+            </span>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+            
+            <!-- Coupon 1 -->
+            <div class="coupon-dashed bg-white p-4 rounded-2xl flex items-center justify-between hover:bg-orange-50/50 transition">
+              <div>
+                <span class="text-xs font-bold text-accent-600 block">ส่วนลด 50 บาท (ขั้นต่ำ 200.-)</span>
+                <span class="font-mono font-extrabold text-xl text-slate-800 tracking-wider">MINI50</span>
+              </div>
+              <button onclick="copyCoupon('MINI50')" class="bg-slate-100 hover:bg-accent-500 hover:text-white text-slate-700 text-xs font-bold px-3 py-2 rounded-xl transition flex items-center gap-1.5">
+                <i class="fa-regular fa-copy"></i> <span id="btn-MINI50">คัดลอก</span>
+              </button>
+            </div>
+
+            <!-- Coupon 2 -->
+            <div class="coupon-dashed bg-white p-4 rounded-2xl flex items-center justify-between hover:bg-orange-50/50 transition">
+              <div>
+                <span class="text-xs font-bold text-accent-600 block">ส่งฟรีทุกออเดอร์ (ขั้นต่ำ 150.-)</span>
+                <span class="font-mono font-extrabold text-xl text-slate-800 tracking-wider">FREESHIP</span>
+              </div>
+              <button onclick="copyCoupon('FREESHIP')" class="bg-slate-100 hover:bg-accent-500 hover:text-white text-slate-700 text-xs font-bold px-3 py-2 rounded-xl transition flex items-center gap-1.5">
+                <i class="fa-regular fa-copy"></i> <span id="btn-FREESHIP">คัดลอก</span>
+              </button>
+            </div>
+
+            <!-- Coupon 3 -->
+            <div class="coupon-dashed bg-white p-4 rounded-2xl flex items-center justify-between hover:bg-orange-50/50 transition">
+              <div>
+                <span class="text-xs font-bold text-accent-600 block">ลด 20% สมาชิกใหม่</span>
+                <span class="font-mono font-extrabold text-xl text-slate-800 tracking-wider">WELCOME20</span>
+              </div>
+              <button onclick="copyCoupon('WELCOME20')" class="bg-slate-100 hover:bg-accent-500 hover:text-white text-slate-700 text-xs font-bold px-3 py-2 rounded-xl transition flex items-center gap-1.5">
+                <i class="fa-regular fa-copy"></i> <span id="btn-WELCOME20">คัดลอก</span>
+              </button>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- PRODUCTS SECTION (With Live Filter, Search, Cart Integration) -->
+    <section id="products" class="py-16 sm:py-24 bg-slate-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-10">
+          <div>
+            <div class="inline-flex items-center gap-2 bg-brand-50 border border-brand-200 text-brand-700 px-3.5 py-1 rounded-full text-xs font-semibold uppercase mb-3">
+              <i class="fa-solid fa-basket-shopping text-brand-500"></i> Featured Catalog
+            </div>
+            <h2 class="font-heading font-extrabold text-3xl sm:text-4xl text-slate-900 tracking-tight">
+              สินค้าและโปรโมชั่นยอดนิยม
+            </h2>
+            <p class="text-slate-600 text-base mt-2">
+              เลือกดูสินค้า อัปเดตราคาล่าสุด พร้อมเพิ่มลงตะกร้าเพื่อรับที่สาขาหรือจัดส่ง
+            </p>
+          </div>
+
+          <!-- Live Search Bar -->
+          <div class="relative w-full md:w-80">
+            <input type="text" id="searchInput" placeholder="ค้นหาชื่อสินค้า หรือแบรนด์..." class="w-full bg-white border border-slate-200 text-slate-800 text-sm rounded-2xl pl-10 pr-4 py-3 focus:outline-none focus:ring-2 focus:ring-brand-500 focus:border-transparent shadow-sm">
+            <i class="fa-solid fa-magnifying-glass absolute left-3.5 top-3.5 text-slate-400"></i>
+          </div>
+        </div>
+
+        <!-- Filter Categories Tabs -->
+        <div class="flex items-center gap-2 overflow-x-auto pb-4 mb-8 no-scrollbar text-sm font-medium">
+          <button onclick="filterProducts('all')" class="cat-btn active bg-brand-600 text-white px-5 py-2.5 rounded-xl whitespace-nowrap shadow-sm transition">
+            ทั้งหมด
+          </button>
+          <button onclick="filterProducts('promo')" class="cat-btn bg-white hover:bg-slate-100 text-slate-700 px-5 py-2.5 rounded-xl whitespace-nowrap border border-slate-200 shadow-sm transition">
+            🔥 โปรโมชันพิเศษ
+          </button>
+          <button onclick="filterProducts('food')" class="cat-btn bg-white hover:bg-slate-100 text-slate-700 px-5 py-2.5 rounded-xl whitespace-nowrap border border-slate-200 shadow-sm transition">
+            🍱 อาหารพร้อมทาน & เบเกอรี่
+          </button>
+          <button onclick="filterProducts('drink')" class="cat-btn bg-white hover:bg-slate-100 text-slate-700 px-5 py-2.5 rounded-xl border border-slate-200 shadow-sm transition">
+            🥤 เครื่องดื่มเย็น & กาแฟ
+          </button>
+          <button onclick="filterProducts('snack')" class="cat-btn bg-white hover:bg-slate-100 text-slate-700 px-5 py-2.5 rounded-xl border border-slate-200 shadow-sm transition">
+            🍿 ขนมขบเคี้ยว & นำเข้า
+          </button>
+          <button onclick="filterProducts('daily')" class="cat-btn bg-white hover:bg-slate-100 text-slate-700 px-5 py-2.5 rounded-xl border border-slate-200 shadow-sm transition">
+            🧴 ของใช้จำเป็นในบ้าน
+          </button>
+        </div>
+
+        <!-- Product Grid (Populated dynamically & statically for SEO) -->
+        <div id="productGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <!-- Rendered by JS -->
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 3 BRANCHES SECTION (ที่อยู่ 3 สาขา และ เวลาเปิด-ปิด ชัดเจน) -->
+    <section id="branches" class="py-16 sm:py-24 bg-white border-y border-slate-200/80">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-3xl mx-auto mb-14">
+          <div class="inline-flex items-center gap-2 bg-brand-50 border border-brand-200 text-brand-700 px-3.5 py-1 rounded-full text-xs font-semibold uppercase mb-3">
+            <i class="fa-solid fa-map-pin text-brand-500"></i> Our 3 Convenient Locations
+          </div>
+          <h2 class="font-heading font-extrabold text-3xl sm:text-4xl text-slate-900 tracking-tight mb-4">
+            ที่อยู่ 3 สาขา & เวลาเปิด-ปิด ให้บริการ
+          </h2>
+          <p class="text-slate-600 text-base">
+            MINI MART พร้อมให้บริการคุณด้วย 3 สาขาใจกลางกรุงเทพมหานคร สะดวก เดินทางง่าย และมีสิ่งอำนวยความสะดวกครบครัน
+          </p>
+        </div>
+
+        <!-- Branch Selector Tabs -->
+        <div class="flex justify-center mb-10">
+          <div class="inline-flex bg-slate-100 p-1.5 rounded-2xl border border-slate-200 text-xs sm:text-sm font-semibold">
+            <button onclick="selectBranch(1)" id="branchTab-1" class="branch-tab-btn bg-white text-brand-700 px-5 py-2.5 rounded-xl shadow-sm transition">
+              สาขาที่ 1: สยามสแควร์วัน
+            </button>
+            <button onclick="selectBranch(2)" id="branchTab-2" class="branch-tab-btn text-slate-600 hover:text-slate-900 px-5 py-2.5 rounded-xl transition">
+              สาขาที่ 2: อารีย์ การ์เด้น
+            </button>
+            <button onclick="selectBranch(3)" id="branchTab-3" class="branch-tab-btn text-slate-600 hover:text-slate-900 px-5 py-2.5 rounded-xl transition">
+              สาขาที่ 3: ทองหล่อ ซอย 10
+            </button>
+          </div>
+        </div>
+
+        <!-- 3 Branch Cards Detailed Display Grid -->
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-12">
+          
+          <!-- BRANCH 1: Siam Square One -->
+          <div id="cardBranch1" class="branch-card bg-white rounded-3xl border-2 border-brand-500 p-6 shadow-xl relative overflow-hidden transition-all duration-300">
+            <div class="absolute top-0 right-0 bg-brand-500 text-white text-[11px] font-bold px-3 py-1 rounded-bl-xl tracking-wider">
+              ⭐ สาขาหลัก (FLAGSHIP)
+            </div>
+
+            <div class="flex items-center gap-3 mb-4">
+              <div class="w-12 h-12 rounded-2xl bg-brand-100 text-brand-700 flex items-center justify-center text-xl font-bold">
+                01
+              </div>
+              <div>
+                <h3 class="font-heading font-extrabold text-xl text-slate-900">สาขาสยามสแควร์วัน</h3>
+                <span class="text-xs text-slate-500">Siam Square One Branch</span>
+              </div>
+            </div>
+
+            <!-- Status & Hours Badge -->
+            <div class="bg-emerald-50 border border-emerald-200 rounded-2xl p-4 mb-5">
+              <div class="flex items-center justify-between mb-2">
+                <span class="text-xs font-bold text-emerald-800 flex items-center gap-1.5">
+                  <span class="w-2.5 h-2.5 rounded-full bg-emerald-500 badge-pulse"></span>
+                  เปิดให้บริการขณะนี้
+                </span>
+                <span class="text-[11px] bg-emerald-200/80 text-emerald-900 font-bold px-2 py-0.5 rounded-md">24 ชั่วโมง</span>
+              </div>
+              <div class="text-sm font-semibold text-slate-800 flex items-center gap-2">
+                <i class="fa-regular fa-clock text-brand-600"></i>
+                <span>เวลาเปิด-ปิด: <strong>เปิดบริการตลอด 24 ชั่วโมง (24/7)</strong></span>
+              </div>
+              <div class="text-xs text-slate-600 mt-1 pl-6">ไม่มีวันหยุดราชการ เปิดทุกวัน จันทร์ - อาทิตย์</div>
+            </div>
+
+            <!-- Branch Details -->
+            <div class="space-y-3.5 text-sm text-slate-600 mb-6">
+              <div class="flex items-start gap-3">
+                <i class="fa-solid fa-location-dot text-brand-600 mt-1 flex-shrink-0"></i>
+                <div>
+                  <strong class="text-slate-800 block">ที่อยู่สาขา:</strong>
+                  <span>ชั้น 1 อาคารสยามสแควร์วัน เลขที่ 388 ถนนพระราม 1 แขวงปทุมวัน เขตปทุมวัน กรุงเทพมหานคร 10330</span>
+                </div>
+              </div>
+
+              <div class="flex items-center gap-3">
+                <i class="fa-solid fa-train-subway text-brand-600 flex-shrink-0"></i>
+                <div>
+                  <strong class="text-slate-800">การเดินทาง:</strong> BTS สยาม (ทางออก 4) เดินเชื่อมเข้าห้าง 50 เมตร
+                </div>
+              </div>
+
+              <div class="flex items-center gap-3">
+                <i class="fa-solid fa-phone text-brand-600 flex-shrink-0"></i>
+                <div>
+                  <strong class="text-slate-800">เบอร์โทรศัพท์:</strong> 
+                  <a href="tel:021234567" class="text-brand-600 font-bold hover:underline">02-123-4567 ต่อ 101</a>
+                </div>
+              </div>
+
+              <div class="flex items-start gap-3">
+                <i class="fa-solid fa-circle-check text-brand-600 mt-0.5 flex-shrink-0"></i>
+                <div>
+                  <strong class="text-slate-800 block">สิ่งอำนวยความสะดวก:</strong>
+                  <div class="flex flex-wrap gap-1.5 mt-1">
+                    <span class="bg-slate-100 text-slate-700 text-xs px-2 py-0.5 rounded-md">All Cafe & Bakery</span>
+                    <span class="bg-slate-100 text-slate-700 text-xs px-2 py-0.5 rounded-md">Free Wi-Fi</span>
+                    <span class="bg-slate-100 text-slate-700 text-xs px-2 py-0.5 rounded-md">จุดชาร์จโทรศัพท์</span>
+                    <span class="bg-slate-100 text-slate-700 text-xs px-2 py-0.5 rounded-md">ที่จอดรถในห้าง</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Actions -->
+            <div class="grid grid-cols-2 gap-2 pt-2 border-t border-slate-100">
+              <button onclick="copyAddress('ชั้น 1 อาคารสยามสแควร์วัน เลขที่ 388 ถนนพระราม 1 แขวงปทุมวัน เขตปทุมวัน กรุงเทพฯ 10330')" class="w-full bg-slate-100 hover:bg-slate-200 text-slate-700 text-xs font-bold py-2.5 rounded-xl transition flex items-center justify-center gap-1.5">
+                <i class="fa-regular fa-copy"></i> คัดลอกที่อยู่
+              </button>
+              <a href="https://maps.google.com/?q=Siam+Square+One" target="_blank" rel="noopener" class="w-full bg-brand-600 hover:bg-brand-700 text-white text-xs font-bold py-2.5 rounded-xl transition flex items-center justify-center gap-1.5 shadow-sm">
+                <i class="fa-solid fa-diamond-turn-right"></i> นำทาง Google Maps
+              </a>
+            </div>
+          </div>
+
+          <!-- BRANCH 2: Ari Garden -->
+          <div id="cardBranch2" class="branch-card bg-white rounded-3xl border border-slate-200 p-6 shadow-md hover:shadow-xl relative overflow-hidden transition-all duration-300">
+            <div class="flex items-center gap-3 mb-4">
+              <div class="w-12 h-12 rounded-2xl bg-amber-100 text-amber-700 flex items-center justify-center text-xl font-bold">
+                02
+              </div>
+              <div>
+                <h3 class="font-heading font-extrabold text-xl text-slate-900">สาขาอารีย์ การ์เด้น</h3>
+                <span class="text-xs text-slate-500">Ari Garden Branch</span>
+              </div>
+            </div>
+
+            <!-- Status & Hours Badge -->
+            <div class="bg-emerald-50 border border-emerald-200 rounded-2xl p-4 mb-5">
+              <div class="flex items-center justify-between mb-2">
+                <span class="text-xs font-bold text-emerald-800 flex items-center gap-1.5">
+                  <span class="w-2.5 h-2.5 rounded-full bg-emerald-500 badge-pulse"></span>
+                  เปิดให้บริการขณะนี้
+                </span>
+                <span class="text-[11px] bg-amber-100 text-amber-800 font-bold px-2 py-0.5 rounded-md">เปิดบริการเช้า-ดึก</span>
+              </div>
+              <div class="text-sm font-semibold text-slate-800 flex items-center gap-2">
+                <i class="fa-regular fa-clock text-amber-600"></i>
+                <span>เวลาเปิด-ปิด: <strong>06:00 - 24:00 น.</strong></span>
+              </div>
+              <div class="text-xs text-slate-600 mt-1 pl-6">พิเศษ! วันศุกร์ - อาทิตย์: เปิดตลอด 24 ชั่วโมง</div>
+            </div>
+
+            <!-- Branch Details -->
+            <div class="space-y-3.5 text-sm text-slate-600 mb-6">
+              <div class="flex items-start gap-3">
+                <i class="fa-solid fa-location-dot text-amber-600 mt-1 flex-shrink-0"></i>
+                <div>
+                  <strong class="text-slate-800 block">ที่อยู่สาขา:</strong>
+                  <span>เลขที่ 45/2 ซอยพหลโยธิน 7 (อารีย์) แขวงพญาไท เขตพญาไท กรุงเทพมหานคร 10400</span>
+                </div>
+              </div>
+
+              <div class="flex items-center gap-3">
+                <i class="fa-solid fa-train-subway text-amber-600 flex-shrink-0"></i>
+                <div>
+                  <strong class="text-slate-800">การเดินทาง:</strong> 300 ม. จาก BTS อารีย์ ทางออก 3 มีทางเดินเท้าสะดวก
+                </div>
+              </div>
+
+              <div class="flex items-center gap-3">
+                <i class="fa-solid fa-phone text-amber-600 flex-shrink-0"></i>
+                <div>
+                  <strong class="text-slate-800">เบอร์โทรศัพท์:</strong> 
+                  <a href="tel:022345678" class="text-amber-600 font-bold hover:underline">02-234-5678 ต่อ 102</a>
+                </div>
+              </div>
+
+              <div class="flex items-start gap-3">
+                <i class="fa-solid fa-circle-check text-amber-600 mt-0.5 flex-shrink-0"></i>
+                <div>
+                  <strong class="text-slate-800 block">สิ่งอำนวยความสะดวก:</strong>
+                  <div class="flex flex-wrap gap-1.5 mt-1">
+                    <span class="bg-slate-100 text-slate-700 text-xs px-2 py-0.5 rounded-md">โซนที่นั่งทานอาหาร</span>
+                    <span class="bg-slate-100 text-slate-700 text-xs px-2 py-0.5 rounded-md">สลัดบาร์สด</span>
+                    <span class="bg-slate-100 text-slate-700 text-xs px-2 py-0.5 rounded-md">ที่จอดรถ 10 คัน</span>
+                    <span class="bg-slate-100 text-slate-700 text-xs px-2 py-0.5 rounded-md">รับฝากพัสดุ</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Actions -->
+            <div class="grid grid-cols-2 gap-2 pt-2 border-t border-slate-100">
+              <button onclick="copyAddress('เลขที่ 45/2 ซอยพหลโยธิน 7 แขวงพญาไท เขตพญาไท กรุงเทพฯ 10400')" class="w-full bg-slate-100 hover:bg-slate-200 text-slate-700 text-xs font-bold py-2.5 rounded-xl transition flex items-center justify-center gap-1.5">
+                <i class="fa-regular fa-copy"></i> คัดลอกที่อยู่
+              </button>
+              <a href="https://maps.google.com/?q=Aree+Garden" target="_blank" rel="noopener" class="w-full bg-amber-600 hover:bg-amber-700 text-white text-xs font-bold py-2.5 rounded-xl transition flex items-center justify-center gap-1.5 shadow-sm">
+                <i class="fa-solid fa-diamond-turn-right"></i> นำทาง Google Maps
+              </a>
+            </div>
+          </div>
+
+          <!-- BRANCH 3: Thonglor Soi 10 -->
+          <div id="cardBranch3" class="branch-card bg-white rounded-3xl border border-slate-200 p-6 shadow-md hover:shadow-xl relative overflow-hidden transition-all duration-300">
+            <div class="flex items-center gap-3 mb-4">
+              <div class="w-12 h-12 rounded-2xl bg-indigo-100 text-indigo-700 flex items-center justify-center text-xl font-bold">
+                03
+              </div>
+              <div>
+                <h3 class="font-heading font-extrabold text-xl text-slate-900">สาขาทองหล่อ ซอย 10</h3>
+                <span class="text-xs text-slate-500">Thonglor Soi 10 Branch</span>
+              </div>
+            </div>
+
+            <!-- Status & Hours Badge -->
+            <div class="bg-emerald-50 border border-emerald-200 rounded-2xl p-4 mb-5">
+              <div class="flex items-center justify-between mb-2">
+                <span class="text-xs font-bold text-emerald-800 flex items-center gap-1.5">
+                  <span class="w-2.5 h-2.5 rounded-full bg-emerald-500 badge-pulse"></span>
+                  เปิดให้บริการขณะนี้
+                </span>
+                <span class="text-[11px] bg-indigo-100 text-indigo-900 font-bold px-2 py-0.5 rounded-md">24 ชั่วโมง</span>
+              </div>
+              <div class="text-sm font-semibold text-slate-800 flex items-center gap-2">
+                <i class="fa-regular fa-clock text-indigo-600"></i>
+                <span>เวลาเปิด-ปิด: <strong>เปิดบริการตลอด 24 ชั่วโมง (24/7)</strong></span>
+              </div>
+              <div class="text-xs text-slate-600 mt-1 pl-6">เปิดทุกวันไม่มีวันหยุด พร้อมบาร์อาหารนำเข้าพรีเมียม</div>
+            </div>
+
+            <!-- Branch Details -->
+            <div class="space-y-3.5 text-sm text-slate-600 mb-6">
+              <div class="flex items-start gap-3">
+                <i class="fa-solid fa-location-dot text-indigo-600 mt-1 flex-shrink-0"></i>
+                <div>
+                  <strong class="text-slate-800 block">ที่อยู่สาขา:</strong>
+                  <span>เลขที่ 88/1 ซอยสุขุมวิท 55 (ทองหล่อ 10) แขวงคลองตันเหนือ เขตวัฒนา กรุงเทพมหานคร 10110</span>
+                </div>
+              </div>
+
+              <div class="flex items-center gap-3">
+                <i class="fa-solid fa-car text-indigo-600 flex-shrink-0"></i>
+                <div>
+                  <strong class="text-slate-800">การเดินทาง:</strong> หัวมุมซอยทองหล่อ 10 ตรงข้าม The Commons มีที่จอดรถ
+                </div>
+              </div>
+
+              <div class="flex items-center gap-3">
+                <i class="fa-solid fa-phone text-indigo-600 flex-shrink-0"></i>
+                <div>
+                  <strong class="text-slate-800">เบอร์โทรศัพท์:</strong> 
+                  <a href="tel:023456789" class="text-indigo-600 font-bold hover:underline">02-345-6789 ต่อ 103</a>
+                </div>
+              </div>
+
+              <div class="flex items-start gap-3">
+                <i class="fa-solid fa-circle-check text-indigo-600 mt-0.5 flex-shrink-0"></i>
+                <div>
+                  <strong class="text-slate-800 block">สิ่งอำนวยความสะดวก:</strong>
+                  <div class="flex flex-wrap gap-1.5 mt-1">
+                    <span class="bg-slate-100 text-slate-700 text-xs px-2 py-0.5 rounded-md">สินค้านำเข้าญี่ปุ่น/เกาหลี</span>
+                    <span class="bg-slate-100 text-slate-700 text-xs px-2 py-0.5 rounded-md">ตู้ชาร์จรถ EV</span>
+                    <span class="bg-slate-100 text-slate-700 text-xs px-2 py-0.5 rounded-md">ตู้กดกาแฟสเปเชียลตี้</span>
+                    <span class="bg-slate-100 text-slate-700 text-xs px-2 py-0.5 rounded-md">Drive-thru Pick Up</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Actions -->
+            <div class="grid grid-cols-2 gap-2 pt-2 border-t border-slate-100">
+              <button onclick="copyAddress('เลขที่ 88/1 ซอยสุขุมวิท 55 (ทองหล่อ 10) แขวงคลองตันเหนือ เขตวัฒนา กรุงเทพฯ 10110')" class="w-full bg-slate-100 hover:bg-slate-200 text-slate-700 text-xs font-bold py-2.5 rounded-xl transition flex items-center justify-center gap-1.5">
+                <i class="fa-regular fa-copy"></i> คัดลอกที่อยู่
+              </button>
+              <a href="https://maps.google.com/?q=Thonglor+10" target="_blank" rel="noopener" class="w-full bg-indigo-600 hover:bg-indigo-700 text-white text-xs font-bold py-2.5 rounded-xl transition flex items-center justify-center gap-1.5 shadow-sm">
+                <i class="fa-solid fa-diamond-turn-right"></i> นำทาง Google Maps
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Interactive Google Map Frame -->
+        <div class="bg-slate-50 p-4 sm:p-6 rounded-3xl border border-slate-200">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 mb-4">
+            <div class="flex items-center gap-2">
+              <i class="fa-solid fa-map-location text-brand-600 text-xl"></i>
+              <span class="font-heading font-bold text-slate-800 text-lg">แผนที่ตั้งสาขา: <span id="mapBranchTitle" class="text-brand-600">สาขาที่ 1 สยามสแควร์วัน</span></span>
+            </div>
+            <div class="text-xs text-slate-500">
+              💡 คลิกแท็บสาขาด้านบนเพื่อสลับแผนที่ของแต่ละสาขา
+            </div>
+          </div>
+          
+          <div class="w-full h-80 sm:h-96 rounded-2xl overflow-hidden shadow-inner border border-slate-200 relative bg-slate-200">
+            <iframe id="googleMapFrame" 
+              src="https://maps.google.com/maps?q=Siam+Square+One,+Bangkok&t=&z=15&ie=UTF8&iwloc=&output=embed" 
+              class="w-full h-full border-0" 
+              allowfullscreen="" 
+              loading="lazy" 
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CONTACT CHANNELS SECTION (ช่องทางติดต่อครบครัน พร้อมฟอร์มส่งข้อความ) -->
+    <section id="contact" class="py-16 sm:py-24 bg-slate-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-3xl mx-auto mb-14">
+          <div class="inline-flex items-center gap-2 bg-brand-50 border border-brand-200 text-brand-700 px-3.5 py-1 rounded-full text-xs font-semibold uppercase mb-3">
+            <i class="fa-solid fa-headset text-brand-500"></i> Contact & Support
+          </div>
+          <h2 class="font-heading font-extrabold text-3xl sm:text-4xl text-slate-900 tracking-tight mb-4">
+            ช่องทางการติดต่อ MINI MART
+          </h2>
+          <p class="text-slate-600 text-base">
+            มีข้อสงสัย ตรวจสอบสต็อกสินค้า เสนอแนะบริการ หรือต้องการติดต่อทีมงาน สามารถติดต่อได้ทุกช่องทางตลอด 24 ชั่วโมง
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10">
+          
+          <!-- Contact Channels List (7 cols) -->
+          <div class="lg:col-span-5 space-y-4">
+            
+            <h3 class="font-heading font-bold text-xl text-slate-900 mb-2">ช่องทางติดต่อหลัก</h3>
+
+            <!-- Hotline Phone -->
+            <a href="tel:029998888" class="flex items-center gap-4 bg-white p-4 rounded-2xl border border-slate-200/80 shadow-sm hover:shadow-md hover:border-brand-500 transition group">
+              <div class="w-12 h-12 rounded-xl bg-emerald-100 text-emerald-600 flex items-center justify-center text-xl group-hover:scale-110 transition-transform">
+                <i class="fa-solid fa-phone"></i>
+              </div>
+              <div class="flex-grow">
+                <div class="text-xs text-slate-400 font-medium">Customer Service Call Center (24 ชม.)</div>
+                <div class="text-base font-heading font-bold text-slate-800 group-hover:text-brand-600">02-999-8888</div>
+              </div>
+              <span class="text-xs font-bold text-brand-600 bg-brand-50 px-3 py-1.5 rounded-lg">โทรเลย</span>
+            </a>
+
+            <!-- LINE Official -->
+            <a href="https://line.me" target="_blank" rel="noopener" class="flex items-center gap-4 bg-white p-4 rounded-2xl border border-slate-200/80 shadow-sm hover:shadow-md hover:border-[#06C755] transition group">
+              <div class="w-12 h-12 rounded-xl bg-[#06C755]/10 text-[#06C755] flex items-center justify-center text-2xl group-hover:scale-110 transition-transform">
+                <i class="fa-brands fa-line"></i>
+              </div>
+              <div class="flex-grow">
+                <div class="text-xs text-slate-400 font-medium">LINE Official Account (รับสิทธิพิเศษ & ออเดอร์)</div>
+                <div class="text-base font-heading font-bold text-slate-800 group-hover:text-[#06C755]">@minimart_th</div>
+              </div>
+              <span class="text-xs font-bold text-white bg-[#06C755] px-3 py-1.5 rounded-lg shadow-sm">แอดไลน์</span>
+            </a>
+
+            <!-- Facebook Page -->
+            <a href="https://facebook.com" target="_blank" rel="noopener" class="flex items-center gap-4 bg-white p-4 rounded-2xl border border-slate-200/80 shadow-sm hover:shadow-md hover:border-[#1877F2] transition group">
+              <div class="w-12 h-12 rounded-xl bg-[#1877F2]/10 text-[#1877F2] flex items-center justify-center text-xl group-hover:scale-110 transition-transform">
+                <i class="fa-brands fa-facebook"></i>
+              </div>
+              <div class="flex-grow">
+                <div class="text-xs text-slate-400 font-medium">Facebook Fanpage</div>
+                <div class="text-base font-heading font-bold text-slate-800 group-hover:text-[#1877F2]">MINI MART Thailand</div>
+              </div>
+              <span class="text-xs font-bold text-[#1877F2] bg-blue-50 px-3 py-1.5 rounded-lg">ติดตาม</span>
+            </a>
+
+            <!-- Instagram -->
+            <a href="https://instagram.com" target="_blank" rel="noopener" class="flex items-center gap-4 bg-white p-4 rounded-2xl border border-slate-200/80 shadow-sm hover:shadow-md hover:border-[#E4405F] transition group">
+              <div class="w-12 h-12 rounded-xl bg-[#E4405F]/10 text-[#E4405F] flex items-center justify-center text-xl group-hover:scale-110 transition-transform">
+                <i class="fa-brands fa-instagram"></i>
+              </div>
+              <div class="flex-grow">
+                <div class="text-xs text-slate-400 font-medium">Instagram Official</div>
+                <div class="text-base font-heading font-bold text-slate-800 group-hover:text-[#E4405F]">@minimart.official</div>
+              </div>
+              <span class="text-xs font-bold text-[#E4405F] bg-pink-50 px-3 py-1.5 rounded-lg">Follow</span>
+            </a>
+
+            <!-- TikTok -->
+            <a href="https://tiktok.com" target="_blank" rel="noopener" class="flex items-center gap-4 bg-white p-4 rounded-2xl border border-slate-200/80 shadow-sm hover:shadow-md hover:border-slate-800 transition group">
+              <div class="w-12 h-12 rounded-xl bg-slate-900/10 text-slate-900 flex items-center justify-center text-xl group-hover:scale-110 transition-transform">
+                <i class="fa-brands fa-tiktok"></i>
+              </div>
+              <div class="flex-grow">
+                <div class="text-xs text-slate-400 font-medium">TikTok Channel</div>
+                <div class="text-base font-heading font-bold text-slate-800 group-hover:text-slate-950">@minimart_thailand</div>
+              </div>
+              <span class="text-xs font-bold text-slate-700 bg-slate-100 px-3 py-1.5 rounded-lg">ชมคลิป</span>
+            </a>
+
+            <!-- Email -->
+            <a href="mailto:contact@minimart.co.th" class="flex items-center gap-4 bg-white p-4 rounded-2xl border border-slate-200/80 shadow-sm hover:shadow-md hover:border-brand-500 transition group">
+              <div class="w-12 h-12 rounded-xl bg-brand-100 text-brand-600 flex items-center justify-center text-xl group-hover:scale-110 transition-transform">
+                <i class="fa-regular fa-envelope"></i>
+              </div>
+              <div class="flex-grow">
+                <div class="text-xs text-slate-400 font-medium">อีเมลติดต่อฝ่ายธุรกิจ & สอบถามทั่วไป</div>
+                <div class="text-base font-heading font-bold text-slate-800 group-hover:text-brand-600">contact@minimart.co.th</div>
+              </div>
+              <span class="text-xs font-bold text-brand-600 bg-brand-50 px-3 py-1.5 rounded-lg">ส่งอีเมล</span>
+            </a>
+
+          </div>
+
+          <!-- Interactive Contact Form (7 cols) -->
+          <div class="lg:col-span-7">
+            <div class="bg-white rounded-3xl p-6 sm:p-8 border border-slate-200/80 shadow-xl">
+              <h3 class="font-heading font-bold text-2xl text-slate-900 mb-2">ส่งข้อความถึงทีมงาน</h3>
+              <p class="text-slate-500 text-sm mb-6">กรอกข้อมูลเพื่อให้เจ้าหน้าที่ฝ่ายบริการลูกค้าติดต่อกลับโดยเร็วที่สุด</p>
+
+              <form id="contactForm" onsubmit="handleContactSubmit(event)" class="space-y-4">
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  <div>
+                    <label class="block text-xs font-bold text-slate-700 mb-1.5">ชื่อ-นามสกุล <span class="text-red-500">*</span></label>
+                    <input type="text" id="contactName" required placeholder="เช่น สมชาย ใจดี" class="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-brand-500 focus:bg-white transition">
+                  </div>
+                  <div>
+                    <label class="block text-xs font-bold text-slate-700 mb-1.5">เบอร์โทรศัพท์ <span class="text-red-500">*</span></label>
+                    <input type="tel" id="contactPhone" required placeholder="08x-xxx-xxxx" class="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-brand-500 focus:bg-white transition">
+                  </div>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  <div>
+                    <label class="block text-xs font-bold text-slate-700 mb-1.5">อีเมล (ถ้ามี)</label>
+                    <input type="email" id="contactEmail" placeholder="yourname@email.com" class="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-brand-500 focus:bg-white transition">
+                  </div>
+                  <div>
+                    <label class="block text-xs font-bold text-slate-700 mb-1.5">สาขาที่ต้องการติดต่อ</label>
+                    <select id="contactBranch" class="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-brand-500 focus:bg-white transition">
+                      <option value="all">ติดต่อสำนักงานใหญ่ / ทุกสาขา</option>
+                      <option value="siam">สาขาที่ 1: สยามสแควร์วัน (เปิด 24 ชม.)</option>
+                      <option value="ari">สาขาที่ 2: อารีย์ การ์เด้น (06:00 - 24:00 น.)</option>
+                      <option value="thonglor">สาขาที่ 3: ทองหล่อ ซอย 10 (เปิด 24 ชม.)</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div>
+                  <label class="block text-xs font-bold text-slate-700 mb-1.5">หัวข้อข้อความ</label>
+                  <input type="text" id="contactSubject" placeholder="เช่น สอบถามสินค้าโปรโมชั่น หรือ เสนอแนะบริการ" class="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-brand-500 focus:bg-white transition">
+                </div>
+
+                <div>
+                  <label class="block text-xs font-bold text-slate-700 mb-1.5">รายละเอียดข้อความ <span class="text-red-500">*</span></label>
+                  <textarea id="contactMessage" required rows="4" placeholder="พิมพ์ข้อความที่คุณต้องการติดต่อที่นี่..." class="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-brand-500 focus:bg-white transition"></textarea>
+                </div>
+
+                <div class="pt-2">
+                  <button type="submit" class="w-full bg-brand-600 hover:bg-brand-700 text-white font-semibold py-3.5 rounded-xl shadow-lg shadow-brand-600/30 transition flex items-center justify-center gap-2">
+                    <i class="fa-solid fa-paper-plane"></i> ส่งข้อความถึงเรา
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- SHOPPING CART DRAWER / MODAL -->
+  <div id="cartModal" class="fixed inset-0 z-50 overflow-hidden hidden" aria-labelledby="slide-over-title" role="dialog" aria-modal="true">
+    <div class="absolute inset-0 bg-slate-900/60 backdrop-blur-sm transition-opacity" id="cartOverlay"></div>
+
+    <div class="pointer-events-none fixed inset-y-0 right-0 flex max-w-full pl-10">
+      <div class="pointer-events-auto w-screen max-w-md bg-white shadow-2xl flex flex-col">
+        
+        <!-- Cart Header -->
+        <div class="p-6 border-b border-slate-200 flex items-center justify-between bg-slate-50">
+          <div class="flex items-center gap-2.5">
+            <div class="w-9 h-9 rounded-xl bg-brand-100 text-brand-700 flex items-center justify-center font-bold">
+              <i class="fa-solid fa-basket-shopping"></i>
+            </div>
+            <div>
+              <h3 class="font-heading font-bold text-lg text-slate-900">ตะกร้าสินค้าของคุณ</h3>
+              <span id="cartItemCountText" class="text-xs text-slate-500">0 รายการ</span>
+            </div>
+          </div>
+          <button id="closeCartBtn" class="text-slate-400 hover:text-slate-600 p-2 rounded-xl hover:bg-slate-200/50 transition">
+            <i class="fa-solid fa-xmark text-xl"></i>
+          </button>
+        </div>
+
+        <!-- Cart Branch Selection -->
+        <div class="px-6 py-3 bg-brand-50/70 border-b border-brand-100 flex items-center justify-between text-xs">
+          <span class="text-brand-900 font-medium"><i class="fa-solid fa-store mr-1 text-brand-600"></i> สาขาที่เลือกรับสินค้า:</span>
+          <select id="checkoutBranchSelect" class="bg-white border border-brand-300 rounded-lg px-2 py-1 text-brand-800 font-semibold focus:outline-none">
+            <option value="Siam Square One">สาขา 1: สยามสแควร์วัน (24 ชม.)</option>
+            <option value="Ari Garden">สาขา 2: อารีย์ การ์เด้น (06:00-24:00)</option>
+            <option value="Thonglor Soi 10">สาขา 3: ทองหล่อ 10 (24 ชม.)</option>
+          </select>
+        </div>
+
+        <!-- Cart Items List Container -->
+        <div id="cartItemsList" class="flex-1 overflow-y-auto p-6 space-y-4">
+          <!-- Dynamically filled by JS -->
+          <div id="emptyCartMessage" class="text-center py-16 text-slate-400">
+            <i class="fa-solid fa-basket-shopping text-5xl mb-3 text-slate-300"></i>
+            <p class="text-base font-semibold text-slate-600">ยังไม่มีสินค้าในตะกร้า</p>
+            <p class="text-xs text-slate-400 mt-1">เลือกสินค้าและโปรโมชันโดนใจแล้วหยิบใส่ตะกร้าได้เลย!</p>
+          </div>
+        </div>
+
+        <!-- Coupon Input in Cart -->
+        <div class="px-6 py-3 border-t border-slate-100 bg-slate-50">
+          <div class="flex gap-2">
+            <input type="text" id="couponCodeInput" placeholder="กรอกโค้ดส่วนลด (เช่น MINI50)" class="flex-grow bg-white border border-slate-200 rounded-xl px-3 py-2 text-xs font-mono uppercase focus:outline-none focus:ring-1 focus:ring-brand-500">
+            <button onclick="applyCoupon()" class="bg-slate-800 hover:bg-slate-900 text-white text-xs font-bold px-4 py-2 rounded-xl transition">
+              ใช้โค้ด
+            </button>
+          </div>
+          <div id="couponAppliedBadge" class="hidden mt-2 text-xs text-emerald-700 bg-emerald-50 px-2 py-1 rounded-md flex items-center justify-between">
+            <span><i class="fa-solid fa-circle-check mr-1"></i> ใช้โค้ดสำเร็จ</span>
+            <button onclick="removeCoupon()" class="text-red-500 font-bold hover:underline">ยกเลิก</button>
+          </div>
+        </div>
+
+        <!-- Cart Footer / Summary -->
+        <div class="p-6 border-t border-slate-200 bg-white space-y-3">
+          <div class="flex justify-between text-xs text-slate-500">
+            <span>ยอดรวมสินค้า</span>
+            <span id="cartSubtotal" class="font-medium text-slate-800">฿0.00</span>
+          </div>
+          <div class="flex justify-between text-xs text-emerald-600">
+            <span>ส่วนลดคูปอง</span>
+            <span id="cartDiscount">-฿0.00</span>
+          </div>
+          <div class="flex justify-between text-base font-heading font-bold text-slate-900 pt-2 border-t border-slate-100">
+            <span>ยอดสุทธิ</span>
+            <span id="cartTotal" class="text-brand-600 text-xl font-extrabold">฿0.00</span>
+          </div>
+
+          <button onclick="handleCheckout()" id="checkoutBtn" disabled class="w-full mt-4 bg-brand-600 hover:bg-brand-700 disabled:bg-slate-300 disabled:cursor-not-allowed text-white font-semibold py-3.5 rounded-2xl shadow-lg shadow-brand-600/30 transition flex items-center justify-center gap-2">
+            <i class="fa-solid fa-lock text-sm"></i> สั่งซื้อและชำระเงิน
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- TOAST NOTIFICATION -->
+  <div id="toast" class="fixed bottom-6 right-6 z-50 bg-slate-900 text-white px-5 py-3 rounded-2xl shadow-2xl flex items-center gap-3 transform translate-y-24 opacity-0 transition-all duration-300 pointer-events-none">
+    <div id="toastIcon" class="text-emerald-400 text-lg"><i class="fa-solid fa-circle-check"></i></div>
+    <div id="toastMsg" class="text-sm font-medium">ข้อความแจ้งเตือน</div>
+  </div>
+
+  <!-- ORDER SUCCESS MODAL -->
+  <div id="orderSuccessModal" class="fixed inset-0 z-50 overflow-y-auto hidden">
+    <div class="fixed inset-0 bg-slate-900/60 backdrop-blur-sm" onclick="closeSuccessModal()"></div>
+    <div class="min-h-full flex items-center justify-center p-4">
+      <div class="relative bg-white rounded-3xl p-8 max-w-md w-full shadow-2xl text-center">
+        <div class="w-20 h-20 bg-emerald-100 text-emerald-600 rounded-full flex items-center justify-center text-4xl mx-auto mb-4 animate-bounce">
+          <i class="fa-solid fa-check"></i>
+        </div>
+        <h3 class="font-heading font-extrabold text-2xl text-slate-900 mb-2">สั่งซื้อสำเร็จเรียบร้อย!</h3>
+        <p class="text-slate-600 text-sm mb-4">ขอบคุณที่เลือกซื้อสินค้ากับ MINI MART คำสั่งซื้อของคุณได้รับการยืนยันแล้ว</p>
+        
+        <div class="bg-slate-50 p-4 rounded-2xl border border-slate-200 text-left text-xs space-y-2 mb-6">
+          <div class="flex justify-between">
+            <span class="text-slate-400">เลขออเดอร์:</span>
+            <span class="font-mono font-bold text-slate-800" id="successOrderNo">#MM-884920</span>
+          </div>
+          <div class="flex justify-between">
+            <span class="text-slate-400">สาขารับสินค้า:</span>
+            <span class="font-bold text-brand-700" id="successBranchName">สาขา 1: สยามสแควร์วัน</span>
+          </div>
+          <div class="flex justify-between">
+            <span class="text-slate-400">ยอดชำระ:</span>
+            <span class="font-bold text-accent-600" id="successTotalAmount">฿0.00</span>
+          </div>
+          <div class="flex justify-between">
+            <span class="text-slate-400">สถานะ:</span>
+            <span class="text-emerald-600 font-bold">🟢 พร้อมจัดเตรียมใน 15 นาที</span>
+          </div>
+        </div>
+
+        <button onclick="closeSuccessModal()" class="w-full bg-brand-600 hover:bg-brand-700 text-white font-semibold py-3 rounded-xl shadow-md transition">
+          ตกลง และกลับสู่หน้าหลัก
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="bg-slate-900 text-slate-300 pt-16 pb-10 border-t border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 pb-12 border-b border-slate-800">
+        
+        <!-- Col 1: Brand Info -->
+        <div class="lg:col-span-2 space-y-4">
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-brand-500 to-emerald-400 flex items-center justify-center text-white font-bold text-xl">
+              <i class="fa-solid fa-basket-shopping"></i>
+            </div>
+            <span class="font-heading font-extrabold text-2xl text-white tracking-tight">MINI <span class="text-accent-500">MART</span></span>
+          </div>
+          <p class="text-slate-400 text-sm max-w-sm leading-relaxed">
+            ร้านสะดวกซื้อยุคใหม่ สะอาด สดใหม่ ใกล้บ้านคุณ ทั้ง 3 สาขาตลอด 24 ชั่วโมง พร้อมตอบโจทย์ทุกไลฟ์สไตล์ด้วยสินค้าคุณภาพดีและโปรโมชันสุดคุ้ม
+          </p>
+          <div class="flex items-center gap-3 pt-2">
+            <a href="https://facebook.com" target="_blank" rel="noopener" class="w-9 h-9 rounded-xl bg-slate-800 hover:bg-brand-600 text-slate-300 hover:text-white flex items-center justify-center transition"><i class="fa-brands fa-facebook-f text-sm"></i></a>
+            <a href="https://line.me" target="_blank" rel="noopener" class="w-9 h-9 rounded-xl bg-slate-800 hover:bg-[#06C755] text-slate-300 hover:text-white flex items-center justify-center transition"><i class="fa-brands fa-line text-lg"></i></a>
+            <a href="https://instagram.com" target="_blank" rel="noopener" class="w-9 h-9 rounded-xl bg-slate-800 hover:bg-pink-600 text-slate-300 hover:text-white flex items-center justify-center transition"><i class="fa-brands fa-instagram text-sm"></i></a>
+            <a href="https://tiktok.com" target="_blank" rel="noopener" class="w-9 h-9 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-300 hover:text-white flex items-center justify-center transition"><i class="fa-brands fa-tiktok text-sm"></i></a>
+          </div>
+        </div>
+
+        <!-- Col 2: Quick Links -->
+        <div class="space-y-3">
+          <h4 class="font-heading font-bold text-white text-base">เมนูด่วน</h4>
+          <ul class="space-y-2 text-sm text-slate-400">
+            <li><a href="#home" class="hover:text-brand-400 transition">หน้าแรก</a></li>
+            <li><a href="#promotions" class="hover:text-brand-400 transition">โปรโมชันพิเศษ</a></li>
+            <li><a href="#products" class="hover:text-brand-400 transition">สินค้าและราคา</a></li>
+            <li><a href="#branches" class="hover:text-brand-400 transition">ที่อยู่ 3 สาขา</a></li>
+            <li><a href="#contact" class="hover:text-brand-400 transition">ติดต่อเรา</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: 3 Branches Summary -->
+        <div class="space-y-3">
+          <h4 class="font-heading font-bold text-white text-base">3 สาขาของเรา</h4>
+          <ul class="space-y-2.5 text-xs text-slate-400">
+            <li>
+              <strong class="text-slate-200 block text-xs">1. สยามสแควร์วัน</strong>
+              <span>ชั้น 1 ติด BTS สยาม (24 ชม.)</span>
+            </li>
+            <li>
+              <strong class="text-slate-200 block text-xs">2. อารีย์ การ์เด้น</strong>
+              <span>ซอยพหลโยธิน 7 (06:00-24:00 น.)</span>
+            </li>
+            <li>
+              <strong class="text-slate-200 block text-xs">3. ทองหล่อ ซอย 10</strong>
+              <span>สุขุมวิท 55 ตรงข้าม The Commons (24 ชม.)</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Newsletter / Hours -->
+        <div class="space-y-3">
+          <h4 class="font-heading font-bold text-white text-base">เวลาทำการ</h4>
+          <p class="text-xs text-slate-400 leading-relaxed">
+            สาขา 1 & 3: เปิดตลอด 24 ชั่วโมง<br>
+            สาขา 2: เปิด 06:00 - 24:00 น.<br>
+            (วันศุกร์-อาทิตย์ เปิด 24 ชม.)
+          </p>
+          <div class="pt-2">
+            <span class="text-xs text-slate-400 block mb-1">Call Center รับสายตลอด 24 ชม.:</span>
+            <a href="tel:029998888" class="text-brand-400 font-heading font-bold text-lg hover:underline"><i class="fa-solid fa-phone mr-1"></i>02-999-8888</a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Copyright Bottom Bar -->
+      <div class="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500 gap-4">
+        <div>
+          © 2026 MINI MART Thailand Co., Ltd. สงวนลิขสิทธิ์ทุกประการ
+        </div>
+        <div class="flex items-center gap-6">
+          <a href="#home" class="hover:text-slate-400">นโยบายความเป็นส่วนตัว</a>
+          <a href="#home" class="hover:text-slate-400">ข้อกำหนดการให้บริการ</a>
+          <a href="#home" class="hover:text-slate-400">ร่วมงานกับเรา</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JAVASCRIPT LOGIC -->
+  <script>
+    // PRODUCT DATA
+    const productsData = [
+      {
+        id: 1,
+        title: "เซ็ตกาแฟสดพรีเมียม + ขนมปังโทสต์",
+        category: "promo",
+        price: 59,
+        originalPrice: 115,
+        discount: "-48%",
+        badge: "Flash Sale",
+        image: "https://images.unsplash.com/photo-1544787219-7f47ccb76574?auto=format&fit=crop&w=400&q=80",
+        description: "กาแฟอาราบิก้าคั่วสดคู่โทสต์เนยสดเน้นๆ อิ่มคุ้มยามเช้า"
+      },
+      {
+        id: 2,
+        title: "ข้าวกล่องกะเพราไก่ไข่ดาวพรีเมียม",
+        category: "food",
+        price: 49,
+        originalPrice: 65,
+        discount: "-25%",
+        badge: "ขายดีอันดับ 1",
+        image: "https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?auto=format&fit=crop&w=400&q=80",
+        description: "ผัดสดใหม่ รสชาติจัดจ้าน พร้อมข้าวหอมมะลิแท้ 100%"
+      },
+      {
+        id: 3,
+        title: "ชานมไข่มุกไต้หวันแท้ (ซื้อ 1 แถม 1)",
+        category: "drink",
+        price: 45,
+        originalPrice: 90,
+        discount: "1 แถม 1",
+        badge: "Buy 1 Get 1",
+        image: "https://images.unsplash.com/photo-1558857563-b371033873b8?auto=format&fit=crop&w=400&q=80",
+        description: "ไข่มุกเคี่ยวน้ำตาลทรายแดง หอมนุ่มละมุนลิ้น"
+      },
+      {
+        id: 4,
+        title: "ครัวซองต์เนยสดฝรั่งเศส อบสดใหม่",
+        category: "food",
+        price: 39,
+        originalPrice: 55,
+        discount: "-29%",
+        badge: "อบสดทุกวัน",
+        image: "https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=400&q=80",
+        description: "หอมเนยแท้นำเข้าจากฝรั่งเศส กรอบนอกนุ่มใน"
+      },
+      {
+        id: 5,
+        title: "มันฝรั่งทอดกรอบ รสทรัฟเฟิลดำ",
+        category: "snack",
+        price: 32,
+        originalPrice: 42,
+        discount: "-24%",
+        badge: "สินค้านำเข้า",
+        image: "https://images.unsplash.com/photo-1566478989037-eec170784d0b?auto=format&fit=crop&w=400&q=80",
+        description: "มันฝรั่งแผ่นเรียบ อบกรอบ คลุกเคล้ากลิ่นทรัฟเฟิลเข้มข้น"
+      },
+      {
+        id: 6,
+        title: "น้ำผลไม้สกัดเย็น 100% (Cold Pressed)",
+        category: "drink",
+        price: 55,
+        originalPrice: 79,
+        discount: "-30%",
+        badge: "เพื่อสุขภาพ",
+        image: "https://images.unsplash.com/photo-1613478223719-2ab802602423?auto=format&fit=crop&w=400&q=80",
+        description: "รวมวิตามินซีจากผลไม้สดแท้ ไม่เติมน้ำตาล ดื่มสดชื่น"
+      },
+      {
+        id: 7,
+        title: "เจลอาบน้ำสูตรพฤกษาธรรมชาติ 500ml",
+        category: "daily",
+        price: 89,
+        originalPrice: 149,
+        discount: "-40%",
+        badge: "ลดพิเศษ",
+        image: "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?auto=format&fit=crop&w=400&q=80",
+        description: "บำรุงผิวเนียนนุ่ม ชุ่มชื้นยาวนานตลอด 24 ชั่วโมง"
+      },
+      {
+        id: 8,
+        title: "แซนวิชแฮมดับเบิ้ลชีส โทสต์ร้อน",
+        category: "food",
+        price: 35,
+        originalPrice: 45,
+        discount: "-22%",
+        badge: "อุ่นร้อนฟรี",
+        image: "https://images.unsplash.com/photo-1528735602780-2552fd46c7af?auto=format&fit=crop&w=400&q=80",
+        description: "ชีสเยิ้มๆ แฮมแน่นเต็มคำ อิ่มสบายท้องได้ทุกเวลา"
+      }
+    ];
+
+    // CART STATE
+    let cart = [];
+    let appliedDiscount = 0;
+    let appliedCouponName = '';
+
+    // RENDER PRODUCTS
+    function renderProducts(items) {
+      const grid = document.getElementById('productGrid');
+      if (!grid) return;
+      
+      if (items.length === 0) {
+        grid.innerHTML = `
+          <div class="col-span-full py-16 text-center text-slate-400">
+            <i class="fa-solid fa-magnifying-glass text-5xl mb-3 text-slate-300"></i>
+            <p class="text-base font-semibold text-slate-600">ไม่พบสินค้าที่ตรงกับการค้นหา</p>
+            <p class="text-xs text-slate-400">ลองค้นหาด้วยคำอื่น หรือเลือกหมวดหมู่อื่นดูนะครับ</p>
+          </div>
+        `;
+        return;
+      }
+
+      grid.innerHTML = items.map(p => `
+        <div class="bg-white rounded-3xl p-4 border border-slate-200/90 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
+          <div>
+            <div class="relative overflow-hidden rounded-2xl mb-4 bg-slate-100 aspect-square">
+              <img src="${p.image}" alt="${p.title}" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+              <span class="absolute top-2.5 left-2.5 bg-accent-500 text-white font-heading font-bold text-[11px] px-2.5 py-0.5 rounded-lg shadow-sm">
+                ${p.badge}
+              </span>
+              ${p.discount ? `
+                <span class="absolute top-2.5 right-2.5 bg-red-600 text-white font-bold text-[11px] px-2 py-0.5 rounded-lg shadow-sm">
+                  ${p.discount}
+                </span>
+              ` : ''}
+            </div>
+            
+            <h4 class="font-heading font-semibold text-slate-900 text-base leading-snug line-clamp-1 mb-1 group-hover:text-brand-600 transition">
+              ${p.title}
+            </h4>
+            <p class="text-slate-500 text-xs line-clamp-2 mb-3">
+              ${p.description}
+            </p>
+          </div>
+
+          <div class="pt-3 border-t border-slate-100 flex items-center justify-between">
+            <div>
+              <div class="flex items-baseline gap-1.5">
+                <span class="text-brand-600 font-heading font-extrabold text-xl">฿${p.price}</span>
+                ${p.originalPrice ? `<span class="text-slate-400 text-xs line-through">฿${p.originalPrice}</span>` : ''}
+              </div>
+              <span class="text-[10px] text-emerald-600 font-semibold block">มีจำหน่าย 3 สาขา</span>
+            </div>
+
+            <button onclick="addToCart(${p.id})" class="bg-brand-50 hover:bg-brand-600 hover:text-white text-brand-700 text-xs font-bold px-3.5 py-2.5 rounded-xl transition flex items-center gap-1.5 shadow-sm">
+              <i class="fa-solid fa-cart-plus"></i> เพิ่ม
+            </button>
+          </div>
+        </div>
+      `).join('');
+    }
+
+    // CATEGORY FILTER
+    function filterProducts(cat) {
+      document.querySelectorAll('.cat-btn').forEach(btn => {
+        btn.classList.remove('bg-brand-600', 'text-white');
+        btn.classList.add('bg-white', 'text-slate-700');
+      });
+      event.target.classList.remove('bg-white', 'text-slate-700');
+      event.target.classList.add('bg-brand-600', 'text-white');
+
+      if (cat === 'all') {
+        renderProducts(productsData);
+      } else {
+        const filtered = productsData.filter(p => p.category === cat);
+        renderProducts(filtered);
+      }
+    }
+
+    // SEARCH INPUT
+    document.getElementById('searchInput')?.addEventListener('input', function(e) {
+      const term = e.target.value.toLowerCase().trim();
+      const matched = productsData.filter(p => 
+        p.title.toLowerCase().includes(term) || 
+        p.description.toLowerCase().includes(term)
+      );
+      renderProducts(matched);
+    });
+
+    // CART OPERATIONS
+    function addToCart(productId) {
+      const item = productsData.find(p => p.id === productId);
+      if (!item) return;
+
+      const existing = cart.find(c => c.id === productId);
+      if (existing) {
+        existing.quantity += 1;
+      } else {
+        cart.push({ ...item, quantity: 1 });
+      }
+
+      updateCartUI();
+      showToast(`เพิ่ม "${item.title}" ลงในตะกร้าแล้ว`);
+    }
+
+    function changeQuantity(id, delta) {
+      const item = cart.find(c => c.id === id);
+      if (!item) return;
+
+      item.quantity += delta;
+      if (item.quantity <= 0) {
+        cart = cart.filter(c => c.id !== id);
+      }
+      updateCartUI();
+    }
+
+    function updateCartUI() {
+      const countBadge = document.getElementById('cartCountBadge');
+      const itemCountText = document.getElementById('cartItemCountText');
+      const itemsList = document.getElementById('cartItemsList');
+      const subtotalEl = document.getElementById('cartSubtotal');
+      const discountEl = document.getElementById('cartDiscount');
+      const totalEl = document.getElementById('cartTotal');
+      const checkoutBtn = document.getElementById('checkoutBtn');
+
+      const totalItems = cart.reduce((sum, item) => sum + item.quantity, 0);
+      
+      // Update badge
+      if (countBadge) {
+        countBadge.innerText = totalItems;
+        if (totalItems > 0) {
+          countBadge.classList.remove('scale-0');
+        } else {
+          countBadge.classList.add('scale-0');
+        }
+      }
+
+      if (itemCountText) {
+        itemCountText.innerText = `${totalItems} รายการ`;
+      }
+
+      // Calculate amounts
+      const subtotal = cart.reduce((sum, item) => sum + (item.price * item.quantity), 0);
+      let discountAmount = 0;
+      if (appliedDiscount > 0 && subtotal > 0) {
+        discountAmount = Math.min(appliedDiscount, subtotal);
+      }
+      const netTotal = Math.max(0, subtotal - discountAmount);
+
+      if (subtotalEl) subtotalEl.innerText = `฿${subtotal.toFixed(2)}`;
+      if (discountEl) discountEl.innerText = `-฿${discountAmount.toFixed(2)}`;
+      if (totalEl) totalEl.innerText = `฿${netTotal.toFixed(2)}`;
+
+      if (checkoutBtn) {
+        checkoutBtn.disabled = cart.length === 0;
+      }
+
+      // Render cart items
+      if (itemsList) {
+        if (cart.length === 0) {
+          itemsList.innerHTML = `
+            <div class="text-center py-16 text-slate-400">
+              <i class="fa-solid fa-basket-shopping text-5xl mb-3 text-slate-300"></i>
+              <p class="text-base font-semibold text-slate-600">ยังไม่มีสินค้าในตะกร้า</p>
+              <p class="text-xs text-slate-400 mt-1">เลือกสินค้าและโปรโมชันโดนใจแล้วหยิบใส่ตะกร้าได้เลย!</p>
+            </div>
+          `;
+        } else {
+          itemsList.innerHTML = cart.map(item => `
+            <div class="flex items-center gap-3 p-3 bg-slate-50 rounded-2xl border border-slate-100">
+              <img src="${item.image}" alt="${item.title}" class="w-16 h-16 object-cover rounded-xl shadow-sm">
+              <div class="flex-grow min-w-0">
+                <h4 class="font-heading font-bold text-sm text-slate-800 truncate">${item.title}</h4>
+                <div class="text-xs text-brand-600 font-bold">฿${item.price} <span class="text-slate-400 font-normal">/ ชิ้น</span></div>
+                
+                <div class="flex items-center gap-2 mt-2">
+                  <button onclick="changeQuantity(${item.id}, -1)" class="w-6 h-6 rounded-lg bg-white border border-slate-200 text-slate-600 hover:bg-slate-100 flex items-center justify-center text-xs font-bold">-</button>
+                  <span class="text-xs font-bold text-slate-800 w-5 text-center">${item.quantity}</span>
+                  <button onclick="changeQuantity(${item.id}, 1)" class="w-6 h-6 rounded-lg bg-white border border-slate-200 text-slate-600 hover:bg-slate-100 flex items-center justify-center text-xs font-bold">+</button>
+                </div>
+              </div>
+              <div class="text-right">
+                <div class="font-heading font-bold text-sm text-slate-900">฿${(item.price * item.quantity).toFixed(2)}</div>
+                <button onclick="changeQuantity(${item.id}, -${item.quantity})" class="text-red-400 hover:text-red-600 text-xs mt-2">
+                  <i class="fa-regular fa-trash-can"></i>
+                </button>
+              </div>
+            </div>
+          `).join('');
+        }
+      }
+    }
+
+    // COUPON APPLICATION
+    function copyCoupon(code) {
+      navigator.clipboard.writeText(code).then(() => {
+        showToast(`คัดลอกโค้ด "${code}" แล้ว! นำไปใส่ในตะกร้าได้เลย`);
+        const btn = document.getElementById(`btn-${code}`);
+        if (btn) {
+          const original = btn.innerText;
+          btn.innerText = 'คัดลอกแล้ว!';
+          setTimeout(() => btn.innerText = original, 2000);
+        }
+      }).catch(() => {
+        showToast(`โค้ดของคุณคือ: ${code}`);
+      });
+    }
+
+    function applyCoupon() {
+      const codeInput = document.getElementById('couponCodeInput');
+      if (!codeInput) return;
+      const code = codeInput.value.trim().toUpperCase();
+
+      if (code === 'MINI50') {
+        appliedDiscount = 50;
+        appliedCouponName = code;
+        showAppliedCoupon(code, 'ลด 50 บาท');
+      } else if (code === 'FREESHIP') {
+        appliedDiscount = 30; // Free shipping subsidy
+        appliedCouponName = code;
+        showAppliedCoupon(code, 'ส่วนลดค่าจัดส่ง 30 บาท');
+      } else if (code === 'WELCOME20') {
+        const subtotal = cart.reduce((sum, item) => sum + (item.price * item.quantity), 0);
+        appliedDiscount = Math.round(subtotal * 0.2);
+        appliedCouponName = code;
+        showAppliedCoupon(code, 'ลด 20% สมาชิกใหม่');
+      } else {
+        showToast('❌ ไม่พบโค้ดส่วนลดนี้ หรือโค้ดหมดอายุแล้ว');
+        return;
+      }
+      updateCartUI();
+    }
+
+    function showAppliedCoupon(code, desc) {
+      const badge = document.getElementById('couponAppliedBadge');
+      if (badge) {
+        badge.classList.remove('hidden');
+        badge.querySelector('span').innerHTML = `<i class="fa-solid fa-circle-check mr-1"></i> โค้ด ${code} (${desc})`;
+      }
+      showToast(`🎉 ใช้งานโค้ด "${code}" สำเร็จ!`);
+    }
+
+    function removeCoupon() {
+      appliedDiscount = 0;
+      appliedCouponName = '';
+      const badge = document.getElementById('couponAppliedBadge');
+      if (badge) badge.classList.add('hidden');
+      const codeInput = document.getElementById('couponCodeInput');
+      if (codeInput) codeInput.value = '';
+      updateCartUI();
+      showToast('ยกเลิกโค้ดส่วนลดแล้ว');
+    }
+
+    // CHECKOUT
+    function handleCheckout() {
+      if (cart.length === 0) return;
+      
+      const branch = document.getElementById('checkoutBranchSelect').value;
+      const subtotal = cart.reduce((sum, item) => sum + (item.price * item.quantity), 0);
+      const netTotal = Math.max(0, subtotal - appliedDiscount);
+
+      // Populate success modal
+      document.getElementById('successOrderNo').innerText = '#MM-' + Math.floor(100000 + Math.random() * 900000);
+      document.getElementById('successBranchName').innerText = branch;
+      document.getElementById('successTotalAmount').innerText = `฿${netTotal.toFixed(2)}`;
+
+      // Show modal & clear cart
+      document.getElementById('cartModal').classList.add('hidden');
+      document.getElementById('orderSuccessModal').classList.remove('hidden');
+      
+      cart = [];
+      removeCoupon();
+      updateCartUI();
+    }
+
+    function closeSuccessModal() {
+      document.getElementById('orderSuccessModal').classList.add('hidden');
+    }
+
+    // BRANCH INTERACTIVE SELECTOR
+    const branchInfo = {
+      1: {
+        title: "สาขาที่ 1: สยามสแควร์วัน",
+        mapUrl: "https://maps.google.com/maps?q=Siam+Square+One,+Bangkok&t=&z=15&ie=UTF8&iwloc=&output=embed",
+        hours: "เปิด 24 ชั่วโมง (24/7)"
+      },
+      2: {
+        title: "สาขาที่ 2: อารีย์ การ์เด้น",
+        mapUrl: "https://maps.google.com/maps?q=Aree+Garden,+Phahonyothin+7,+Bangkok&t=&z=15&ie=UTF8&iwloc=&output=embed",
+        hours: "06:00 - 24:00 น. (ศ.-อา. 24 ชม.)"
+      },
+      3: {
+        title: "สาขาที่ 3: ทองหล่อ ซอย 10",
+        mapUrl: "https://maps.google.com/maps?q=Thonglor+Soi+10,+Sukhumvit+55,+Bangkok&t=&z=15&ie=UTF8&iwloc=&output=embed",
+        hours: "เปิด 24 ชั่วโมง (24/7)"
+      }
+    };
+
+    function selectBranch(id) {
+      // Highlight tab
+      document.querySelectorAll('.branch-tab-btn').forEach((btn, index) => {
+        if (index + 1 === id) {
+          btn.className = "branch-tab-btn bg-white text-brand-700 px-5 py-2.5 rounded-xl shadow-sm transition font-bold";
+        } else {
+          btn.className = "branch-tab-btn text-slate-600 hover:text-slate-900 px-5 py-2.5 rounded-xl transition";
+        }
+      });
+
+      // Highlight card
+      for (let i = 1; i <= 3; i++) {
+        const card = document.getElementById(`cardBranch${i}`);
+        if (i === id) {
+          card.classList.remove('border-slate-200');
+          card.classList.add('border-brand-500', 'border-2', 'shadow-2xl');
+        } else {
+          card.classList.remove('border-brand-500', 'border-2', 'shadow-2xl');
+          card.classList.add('border-slate-200');
+        }
+      }
+
+      // Update Map
+      const info = branchInfo[id];
+      if (info) {
+        document.getElementById('mapBranchTitle').innerText = info.title;
+        document.getElementById('googleMapFrame').src = info.mapUrl;
+      }
+    }
+
+    function copyAddress(address) {
+      navigator.clipboard.writeText(address).then(() => {
+        showToast('คัดลอกที่อยู่สาขาเรียบร้อยแล้ว');
+      }).catch(() => {
+        showToast(address);
+      });
+    }
+
+    // CONTACT FORM SUBMISSION
+    function handleContactSubmit(e) {
+      e.preventDefault();
+      const name = document.getElementById('contactName').value;
+      const phone = document.getElementById('contactPhone').value;
+      
+      showToast(`ขอบคุณคุณ ${name} ทีมงาน MINI MART ได้รับข้อความแล้ว จะติดต่อกลับที่ ${phone} โดยเร็วที่สุด`);
+      e.target.reset();
+    }
+
+    // TOAST UTILITY
+    let toastTimeout;
+    function showToast(message) {
+      const toast = document.getElementById('toast');
+      const toastMsg = document.getElementById('toastMsg');
+      if (!toast || !toastMsg) return;
+
+      toastMsg.innerText = message;
+      toast.classList.remove('translate-y-24', 'opacity-0');
+      toast.classList.add('translate-y-0', 'opacity-100');
+
+      clearTimeout(toastTimeout);
+      toastTimeout = setTimeout(() => {
+        toast.classList.remove('translate-y-0', 'opacity-100');
+        toast.classList.add('translate-y-24', 'opacity-0');
+      }, 3500);
+    }
+
+    // LIVE COUNTDOWN TIMER FOR FLASH SALE
+    function startCountdown() {
+      let duration = 4 * 3600 + 35 * 60 + 22; // 4h 35m 22s
+      setInterval(() => {
+        if (duration <= 0) duration = 24 * 3600;
+        duration--;
+
+        const h = Math.floor(duration / 3600);
+        const m = Math.floor((duration % 3600) / 60);
+        const s = duration % 60;
+
+        const hEl = document.getElementById('hours');
+        const mEl = document.getElementById('minutes');
+        const sEl = document.getElementById('seconds');
+
+        if (hEl) hEl.innerText = String(h).padStart(2, '0');
+        if (mEl) mEl.innerText = String(m).padStart(2, '0');
+        if (sEl) sEl.innerText = String(s).padStart(2, '0');
+      }, 1000);
+    }
+
+    // MODAL & MENU HANDLERS
+    document.addEventListener('DOMContentLoaded', () => {
+      renderProducts(productsData);
+      startCountdown();
+
+      // Mobile Menu
+      const mobileBtn = document.getElementById('mobileMenuBtn');
+      const mobileMenu = document.getElementById('mobileMenu');
+      const menuIcon = document.getElementById('menuIcon');
+
+      mobileBtn?.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+        if (mobileMenu.classList.contains('hidden')) {
+          menuIcon.className = 'fa-solid fa-bars text-xl';
+        } else {
+          menuIcon.className = 'fa-solid fa-xmark text-xl';
+        }
+      });
+
+      document.querySelectorAll('.mobile-link').forEach(link => {
+        link.addEventListener('click', () => {
+          mobileMenu.classList.add('hidden');
+          menuIcon.className = 'fa-solid fa-bars text-xl';
+        });
+      });
+
+      // Cart Drawer Open/Close
+      const openCartBtn = document.getElementById('openCartBtn');
+      const closeCartBtn = document.getElementById('closeCartBtn');
+      const cartOverlay = document.getElementById('cartOverlay');
+      const cartModal = document.getElementById('cartModal');
+
+      openCartBtn?.addEventListener('click', () => {
+        cartModal.classList.remove('hidden');
+      });
+
+      closeCartBtn?.addEventListener('click', () => {
+        cartModal.classList.add('hidden');
+      });
+
+      cartOverlay?.addEventListener('click', () => {
+        cartModal.classList.add('hidden');
+      });
+    });
+  </script>
+</body>
+</html>
